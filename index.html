@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfection Finish | Marine & Auto Detailing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Perfection Finish</h1>
+    <p>Perfection on Every Surface</p>
+    <button onclick="document.getElementById('quote-form').scrollIntoView({ behavior: 'smooth' })">Confirm Your Quote</button>
+  </header>
+
+  <section class="form-section" id="quote-form">
+    <h2>Request a Quote</h2>
+    <form onsubmit="handleForm(event)">
+      <input type="text" placeholder="First Name" required />
+      <input type="text" placeholder="Last Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <textarea placeholder="Tell us about your vehicle or boat..." rows="4"></textarea>
+      <button type="submit">Submit</button>
+      <div class="success-message" id="success-msg">Thank you for reaching out — we’ll get back to you as quickly as we can.</div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
